@@ -4,9 +4,9 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
-<f:view contentType="text/html">
+
 	<h:head>
-		<ui:include src="views/header.xhtml" />
+
 
 		<style>
 .ui-dock-container-top {
@@ -42,6 +42,7 @@
 
 	</h:head>
 	<h:body>
+		<ui:include src="views/header.xhtml" />
 	<style>
 	.ui-stack > img {
   position: relative;
@@ -51,17 +52,21 @@
   margin-top: -40px ;
   margin-left: -9px;
 }
+#clients {
+    padding: 60px 1%;
+    width: 100%;
+}
 	</style>
-<section class="page_section" id="clients">
+<section class="page_section" id="clients" >
 		<!--main-section team-start-->
 		<div class="container"
-			style="border-radius: 25px; height: 100%; ! important; border: 2px solid #D6C485; padding: 20px;">
+			style="border-radius: 25px;  height: 600px;  padding:0px 0px;  ! important; border: 2px solid #D6C485; padding: 20px;">
 			
 		<!-- <iframe src="3DBookShowcase/3DBookShowcase/index.html" width="100%" height="600px"></iframe>  -->
-		<iframe src="Dashboard/Magazine/oage.html" width="100%" style="height: 700px; !important;"
+		<iframe src="Dashboard/Magazine/oage.html" width="100%" style="height: 100%; !important;"
 			scrolling="no" name="Stack" id="iframe"> </iframe>
 
-		<ui:include src="views/footer.xhtml" />
+		
 		
 		<p:stack icon="../resources/img/icons/stack.png" expanded="true">
 			<p:menuitem icon="../resources/img/icons/empty.png"
@@ -79,8 +84,9 @@
 		</p:stack>
 </div>
 </section>
+<ui:include src="views/footer.xhtml" />
 	</h:body>
-</f:view>
+
 
 </html>
 

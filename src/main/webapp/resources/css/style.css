@@ -1008,7 +1008,7 @@ img {
 
 .footer_wrapper {
     background: #232323;
-      position: fixed; 
+      position: relative; 
 	  left: 0;
 	  right: 0;
 	  bottom: 0;
